@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Auto Elite | Javeria Mariyam</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Navigation Bar -->
+<header>
+    <nav class="navbar">
+        <h1 class="logo">AUTO<span>ELITE</span></h1>
+
+        <div class="menu" id="menu">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#cars">Our Cars</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <button class="menu-btn" id="menuBtn">☰</button>
+    </nav>
+</header>
+
+<!-- Home Page -->
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <p class="tagline">WELCOME TO AUTO ELITE</p>
+
+        <h2>
+            DRIVE YOUR<br>
+            <span>DREAM CAR</span>
+        </h2>
+
+        <br>
+
+        <div class="student-info">
+            <h3>Javeria Mariyam</h3>
+            <p>Mechanical Engineering Student</p>
+        </div>
+
+        <br>
+
+        <p>
+            Experience luxury, performance and innovation.
+            Find the perfect car for your lifestyle.
+        </p>
+
+        <a href="#cars" class="btn">Explore Cars</a>
+
+    </div>
+</section>
+
+<!-- About Us -->
+<section class="about" id="about">
+
+    <div class="about-text">
+
+        <p class="tagline">WHO WE ARE</p>
+
+        <h2>About Auto Elite</h2>
+
+        <p>
+            Auto Elite is a modern automobile showroom
+            dedicated to providing premium vehicles
+            and excellent customer service.
+
+            Our mission is to make every driving
+            experience comfortable, reliable and memorable.
+        </p>
+
+        <a href="#contact" class="btn">Contact Us</a>
+
+    </div>
+
+    <div class="about-image"></div>
+
+</section>
+
+<!-- Our Cars -->
+<section class="cars" id="cars">
+
+    <div class="section-heading">
+
+        <p class="tagline">OUR COLLECTION</p>
+
+        <h2>Explore Our Cars</h2>
+
+        <p>Choose your perfect driving partner.</p>
+
+    </div>
+
+    <div class="filters">
+
+        <input type="text" id="search"
+        placeholder="Search your dream car...">
+
+        <select id="category">
+            <option value="all">All Cars</option>
+            <option value="sedan">Sedan</option>
+            <option value="suv">SUV</option>
+            <option value="sports">Sports</option>
+        </select>
+
+    </div>
+
+    <div class="car-container" id="carContainer">
+
+        <div class="car-card"
+        data-name="Toyota Corolla"
+        data-category="sedan">
+
+            <img src="https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=800"
+            alt="Toyota Corolla">
+
+            <div class="car-info">
+                <h3>Toyota Corolla</h3>
+                <p>Comfortable Sedan</p>
+                <h4>PKR 75 Lakh</h4>
+                <button class="details-btn"
+                data-car="Toyota Corolla">View Details</button>
+            </div>
+
+        </div>
+
+        <div class="car-card"
+        data-name="BMW X5"
+        data-category="suv">
+
+            <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?w=800"
+            alt="BMW X5">
+
+            <div class="car-info">
+                <h3>BMW X5</h3>
+                <p>Premium Luxury SUV</p>
+                <h4>PKR 3.5 Crore</h4>
+                <button class="details-btn"
+                data-car="BMW X5">View Details</button>
+            </div>
+
+        </div>
+
+        <div class="car-card"
+        data-name="Mercedes Benz"
+        data-category="sedan">
+
+            <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=800"
+            alt="Mercedes Benz">
+
+            <div class="car-info">
+                <h3>Mercedes Benz</h3>
+                <p>Luxury Sedan</p>
+                <h4>PKR 2.8 Crore</h4>
+                <button class="details-btn"
+                data-car="Mercedes Benz">View Details</button>
+            </div>
+
+        </div>
+
+        <div class="car-card"
+        data-name="Porsche 911"
+        data-category="sports">
+
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800"
+            alt="Porsche 911">
+
+            <div class="car-info">
+                <h3>Porsche 911</h3>
+                <p>High Performance Sports Car</p>
+                <h4>PKR 8 Crore</h4>
+                <button class="details-btn"
+                data-car="Porsche 911">View Details</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <p id="noResults" hidden>No matching cars found.</p>
+
+</section>
+
+<!-- Services -->
+<section class="services" id="services">
+
+    <div class="section-heading">
+
+        <p class="tagline">WHAT WE OFFER</p>
+
+        <h2>Our Services</h2>
+
+    </div>
+
+    <div class="service-container">
+
+        <div class="service-card">
+            <div class="service-icon">🚘</div>
+            <h3>Car Sales</h3>
+            <p>Find premium vehicles at competitive prices.</p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">🔧</div>
+            <h3>Maintenance</h3>
+            <p>Professional vehicle maintenance services.</p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">🛡️</div>
+            <h3>Car Inspection</h3>
+            <p>Reliable vehicle inspection for better safety.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Contact -->
+<section class="contact" id="contact">
+
+    <div class="section-heading">
+
+        <p class="tagline">GET IN TOUCH</p>
+
+        <h2>Contact Us</h2>
+
+        <p>Have questions? Send us a message.</p>
+
+    </div>
+
+    <form id="contactForm">
+
+        <input type="text" id="name"
+        placeholder="Your Name" required>
+
+        <input type="email" id="email"
+        placeholder="Your Email" required>
+
+        <input type="text" id="subject"
+        placeholder="Subject" required>
+
+        <textarea id="message"
+        placeholder="Your Message" required></textarea>
+
+        <button type="submit" class="btn">
+            Send Message
+        </button>
+
+    </form>
+
+    <p id="formMessage"></p>
+
+</section>
+
+<!-- Footer -->
+<footer>
+
+    <h2>AUTO<span>ELITE</span></h2>
+
+    <p>Premium Cars. Exceptional Experiences.</p>
+
+    <p>© 2026 Auto Elite. All Rights Reserved.</p>
+
+    <div class="creator">
+        <p>This Website is Designed & Developed by</p>
+        <h3>Javeria Mariyam</h3>
+        <p>Mechanical Engineering Student</p>
+    </div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
